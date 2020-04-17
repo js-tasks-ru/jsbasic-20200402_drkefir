@@ -8,8 +8,8 @@ function sumSalary(salaries) {
 	for (let key in salaries) {
 		if (typeof salaries[key] == 'number') {
   		sum += salaries[key];
-  		console.log(sum);
-  		}	
+  	//	console.log(sum);
+  		}
 	}
 return sum;
 }
