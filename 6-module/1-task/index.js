@@ -32,9 +32,9 @@
   constructor(data) {
     this.data = data;
     this.elem = document.createElement('table');
-
+    //sdelaem tablizu
     this.move();
-
+    //nachinaem rabotu s sobitiem
     this.elem.addEventListener('click', event => {
     //pri sobitie na click poluchaem znachenie imeni iz tablizi
       let name = event.target.getAttribute('data-name');
@@ -42,8 +42,6 @@
     //ischem blizhajschego roditelja tr i udaljaem
       let ancestor = event.target.closest('tr[data-tr]');
       ancestor.remove();
-
-      this.deletedID(name);
     });
   }
   move(){
@@ -73,9 +71,4 @@
       </tbody>
     `
   }
-
-  deletedID(name){
-      alert(`Из таблицы удален пользователь ${name}`);
-  }
-
 }
