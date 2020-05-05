@@ -73,7 +73,9 @@
       </tbody>
     `
   }
+  /*
   deletedID(name){
       console.log(`Из таблицы удален пользователь ${name}`);
   }
+  */
 }
